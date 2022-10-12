@@ -19,7 +19,6 @@
 	<table class="table table-dark table-striped">
 		<thead>
 			<tr>
-				<th>ID</th>
 				<th>Title</th>
 				<th>Description</th>
 				<th>URL</th>
@@ -27,7 +26,6 @@
 			</tr>
 			<c:forEach items="${arts}" var="art">
 				<tr>
-					<td><c:out value="${art.id}"></c:out></td>
 					<td><c:out value="${art.title}"></c:out></td>
 					<td><c:out value="${art.description}"></c:out></td>
 					<td><c:out value="${art.url}"></c:out></td>

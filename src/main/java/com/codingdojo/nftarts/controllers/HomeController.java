@@ -70,6 +70,12 @@ public class HomeController {
 		return "redirect:/nft";
 	}
 	
+//	Delete Art
+	@GetMapping("/nft/delete/{id}")
+	public String deleteArt(@PathVariable Long id) {
+		artservice.deleteArt(id);
+		return "redirect:/nft";
+	}
 	
 	
 }
