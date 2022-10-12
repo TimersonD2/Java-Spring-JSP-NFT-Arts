@@ -21,6 +21,9 @@ public class ArtService {
 	}
 		
 //	Find one Art
+	public Art getOneById(Long id) {
+		return artRepo.findById(id).orElse(null);
+	}
 	
 //	Create Art
 	public void createArt(Art art) {
@@ -28,7 +31,13 @@ public class ArtService {
 	}
 	
 //	Update Art
+	public void updateArt(Art art) {
+		artRepo.save(art);
+	}
 	
 //	Delete Art
+	public void deleteArt(Long id) {
+		artRepo.deleteById(id);
+	}
 
 }

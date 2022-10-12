@@ -23,6 +23,7 @@
 				<th>Title</th>
 				<th>Description</th>
 				<th>URL</th>
+				<th>Actions</th>
 			</tr>
 			<c:forEach items="${arts}" var="art">
 				<tr>
@@ -30,6 +31,10 @@
 					<td><c:out value="${art.title}"></c:out></td>
 					<td><c:out value="${art.description}"></c:out></td>
 					<td><c:out value="${art.url}"></c:out></td>
+					<td>
+						<a href="/nft/edit/${art.id}">edit<span> | </span></a>
+						<a href="/nft/delete/${art.id}">delete</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</thead>
