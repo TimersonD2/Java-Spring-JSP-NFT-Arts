@@ -17,14 +17,18 @@ public class ArtService {
 //	Find all Art
 	public List<Art> getAll() {
 		//	Business Logic
-		
 		return artRepo.findAll();
 	}
 		
 //	Find one Art
+	
 //	Create Art
+	public void createArt(Art art) {
+		artRepo.save(art);
+	}
 	
 //	Update Art
+	
 //	Delete Art
 
 }

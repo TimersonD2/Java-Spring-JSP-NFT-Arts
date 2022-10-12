@@ -13,7 +13,9 @@
 <body>
 	<h1>Welcome to NFT Arts</h1>
 	<c:out value="${name}"></c:out>
-	
+	<br>
+	<a href="/nft/new">Add Art</a>
+	<br>
 	<table class="table table-dark table-striped">
 		<thead>
 			<tr>
@@ -32,6 +34,7 @@
 			</c:forEach>
 		</thead>
 	</table>
-	
+	<br>
+	<img alt="" src="/images/rocky-mountain-np1.jpg">
 </body>
 </html>
